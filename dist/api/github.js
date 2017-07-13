@@ -419,9 +419,9 @@ let addReviewers = (() => {
 let addLabels = (() => {
   var _ref17 = _asyncToGenerator(function* (issueNo, labels) {
     logger.debug(`Adding labels ${labels} to #${issueNo}`);
-    logger.debug(`labels args is type ${typeof labels}`);
+    const labelsArr = _.toArray(labels);
     yield ghGot.post(`repos/${config.repoName}/issues/${issueNo}/labels`, {
-      body: labels
+      body: labelsArr
     });
   });
 
@@ -893,6 +893,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 
 let logger = require('../logger');
 const ghGot = require('gh-got');
+const _ = require('lodash');
 
 const config = {};
 
