@@ -1,7 +1,7 @@
 {
   "name": "renovate",
   "description": "Keep npm dependencies up-to-date via Pull Requests",
-  "version": "0.0.0-semantic-release",
+  "version": "0.0.0-homezen-testing",
   "bin": "dist/renovate.js",
   "scripts": {
     "build": "yarn && npm run transpile && cp -R lib/config/templates dist/config",
