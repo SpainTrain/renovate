@@ -50,7 +50,7 @@
     "gl-got": "7.0.0",
     "got": "7.1.0",
     "handlebars": "4.0.10",
-    "ini": "1.3.4",
+    "ini": "1.3.8",
     "json-dup-key-validator": "1.0.2",
     "json-stringify-pretty-compact": "1.0.4",
     "jsonwebtoken": "7.4.1",
